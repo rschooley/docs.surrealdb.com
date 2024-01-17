@@ -1,7 +1,6 @@
 ---
 sidebar_position: 7
 ---
-
 import ThemedImage from '@theme/ThemedImage';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 
@@ -29,7 +28,6 @@ When running in a web browser, SurrealDB can be configured to use [IndexedDB](ht
 ## Deployment architecture with TiKV or FoundationDB
 When you have deployed an HA cluster (High Availability), you will have a deployment that resembles the following configuration
 
-
 <ThemedImage
   alt="Railway"
   className="sdk-logo"
@@ -38,7 +36,6 @@ When you have deployed an HA cluster (High Availability), you will have a deploy
     dark: useBaseUrl('/img/Storage_Cluster.png'),
   }}
 />
-
 
 The HA deployment of your storage layer (TiKV, or FoundationDB) is the stateful part of the system.
 The rules governing the availability guarantees are covered in the documentation of those systems.
